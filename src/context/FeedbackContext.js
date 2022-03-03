@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid' //used to generate unique id
 const FeedbackContext = createContext()
 
 export const FeedbackProvider = ({ children }) => {
-
+    const [isLoading, setIsLoading] = useState(true)
     const [feedback, setFeedback] = useState([])
 
     useEffect(() => {
@@ -18,6 +18,7 @@ export const FeedbackProvider = ({ children }) => {
         const data = await response.json()
 
         setFeedback(data)
+        setIsLoading(false)
     }
 
     //Delete feedback
@@ -35,7 +36,7 @@ export const FeedbackProvider = ({ children }) => {
     }
 
     return <FeedbackContext.Provider
-                value={{feedback, deleteFeedback, addFeedback}}
+                value={{ feedback, deleteFeedback, addFeedback, isLoading }}
             >
         {children}
     </FeedbackContext.Provider>
