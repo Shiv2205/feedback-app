@@ -40,35 +40,3 @@ function App(){
 }
 
 export default App;
-
-
-
-
-
-
-
-/*******************************NOTES*********************************** */
-/*const title = "Blog Post";
-    const body = "Lorem ipsum... something";
-    const comments = [
-        {user: "John", text: "Comment 1"},
-        {user: "Jane", text: "Comment 2"},
-        {user: "Doe", text: "Comment 3"}
-    ];
-    <div className="container">
-            <h1>{title}</h1>
-            <p>{body}</p>
-
-            <div className="comments">
-                <h3>Comments ({comments.length})</h3>
-                <ul>
-                    {comments.map((value, index) => (
-                        <li key={index}>{value.user}
-                            <ul>
-                            <li key={index}>{value.text}</li>
-                            </ul>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        </div>*/
