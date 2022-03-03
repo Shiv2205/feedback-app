@@ -12,7 +12,7 @@ function FeedbackStats() {
     return avg;
   }
 
-  let average = calculateAvg();
+  let average = calculateAvg().toFixed(1);
 
   return (
       <div className="feedback-stats">
