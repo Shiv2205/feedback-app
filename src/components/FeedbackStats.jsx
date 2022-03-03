@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useContext } from 'react'
 import FeedbackContext from '../context/FeedbackContext';
 
 function FeedbackStats() {
@@ -7,7 +7,8 @@ function FeedbackStats() {
 
   const calculateAvg = () => {
     let avg = 0;
-    feedback.map((item) => {avg += item.rating});
+    const sum = feedback.map((item) => {avg += item.rating; return avg});
+    console.log(sum)
     avg = avg / feedback.length;
     return avg;
   }

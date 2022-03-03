@@ -1,10 +1,9 @@
 import { FaTimes } from 'react-icons/fa';
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import Card from './Card';
 import FeedbackContext from '../context/FeedbackContext';
 
 function FeedbackItem({item, reverse}) {
-  const [rating, setRating] = useState(7);
 
   const { deleteFeedback } = useContext(FeedbackContext)
 
