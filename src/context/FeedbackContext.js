@@ -5,7 +5,7 @@ import FeedbackData from '../data/FeedbackData'
 const FeedbackContext = createContext()
 
 export const FeedbackProvider = ({ children }) => {
-    const [isLoading, setIsLoading] = useState(true)
+    const [isLoading, setIsLoading] = useState(false)
     const [feedback, setFeedback] = useState(FeedbackData)
 
     // useEffect(() => {
