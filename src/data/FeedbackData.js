@@ -1,4 +1,4 @@
-const FeedbackData = [
+let FeedbackData = [
     {
       id: 0,
       rating: 10,
