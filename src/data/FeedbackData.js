@@ -1,10 +1,5 @@
 let FeedbackData = [
     {
-      id: 0,
-      rating: 10,
-      text: 'Hey Ma & Pa! Voila 1 mo ban projets ~Shivam'
-    },
-    {
       id: 1,
       rating: 10,
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur vel vitae commodi alias voluptatem est voluptatum ipsa quae.',
